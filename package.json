@@ -1,0 +1,22 @@
+{
+  "name": "solid-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "exports": "./dist/solid-ui.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite --port=3000",
+    "build": "vite build && tsc --emitDeclarationOnly",
+    "lint": "tsc --noEmit --watch"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3",
+    "vite-plugin-solid": "^2.4.0"
+  },
+  "dependencies": {
+    "solid-play": "link:../solid-play",
+    "solid-js": "^1.6.1"
+  }
+}
